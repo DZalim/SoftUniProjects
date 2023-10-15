@@ -4,7 +4,7 @@ list_of_numbers = [int(digit) for digit in string if digit.isdigit()]
 list_of_strings = [letter for letter in string if not letter.isdigit()]
 
 take_list_of_numbers = [list_of_numbers[take] for take in range(len(list_of_numbers)) if take % 2 == 0]
-skip_list_of_numbers = [list_of_numbers[take] for take in range(len(list_of_numbers)) if take % 2 != 0]
+skip_list_of_numbers = [list_of_numbers[skip] for skip in range(len(list_of_numbers)) if skip % 2 != 0]
 
 final_string = []
 list_index = 0
