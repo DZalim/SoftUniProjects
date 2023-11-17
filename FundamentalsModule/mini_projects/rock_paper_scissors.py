@@ -33,7 +33,7 @@ while True:
     elif computer_random_number == 3:
         computer_move = scissors
 
-    print(Fore.BLUE + f"The computer chose {computer_move}.")
+    print(Fore.BLUE + f"The computer choose {computer_move}.")
 
     if (player_move == rock and computer_move == scissors) or (player_move == paper and computer_move == rock) or\
             (player_move == scissors and computer_move == paper):
