@@ -17,4 +17,3 @@ for index in range(len(parentheses)):
             break
 else:
     print('YES')
-    
