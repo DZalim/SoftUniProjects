@@ -1,0 +1,36 @@
+import os
+
+
+def save_extensions(dir_name, first_level = False):
+    for filename in os.listdir(dir_name):
+        file = os.path.join(dir_name, filename)
+
+        if os.path.isfile(file):
+            extension = filename.split('.')[-1]
+            extensions[extension] = extensions.get(extension, []) + [filename]
+        elif os.path.isdir(file) and not first_level:
+            save_extensions(file, first_level=True)
+
+
+directory = input('Enter a directory: ') # example_directory_traversal
+extensions = {}
+result = []
+
+try:
+    save_extensions(directory)
+except FileNotFoundError:
+    print('Directory not found')
+
+extensions = sorted(extensions.items(), key=lambda x: x[0])
+
+for extension, files in extensions:
+    result.append(f'.{extension}')
+
+    for file in sorted(files):
+        result.append(f'- - - {file}')
+
+output_filename = 'directory_traversal_output.txt'
+output_file_path = os.path.join('resources', output_filename)
+
+with open(output_file_path, 'w') as output_file:
+    output_file.write('\n'.join(result))
