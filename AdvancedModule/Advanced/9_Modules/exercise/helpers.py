@@ -3,7 +3,7 @@ from canvas import frame
 
 
 def clean_screen():
-    frame.delete("all")
+    frame.delete('all')
 
 
 def get_password_hash(password):

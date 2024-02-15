@@ -1,18 +1,1 @@
-{
-  "Nike T-Shirt": {
-    "quantity": 7,
-    "image": "images/blue_t_shirt.png"
-  },
-  "Puma T-Shirt": {
-    "quantity": 5,
-    "image": "images/blue_t_shirt.png"
-  },
-  "Vans Shoes": {
-    "quantity": 7,
-    "image": "images/shoes.png"
-  },
-  "Jeans": {
-    "quantity": 0,
-    "image": "images/black_jeans.png"
-  }
-}
+{"Nike T-Shirt": {"quantity": 10, "image": "images/blue_t_shirt.png"}, "Puma T-Shirt": {"quantity": 4, "image": "images/blue_t_shirt.png"}, "Vans Shoes": {"quantity": 2, "image": "images/shoes.png"}, "Jeans": {"quantity": 5, "image": "images/black_jeans.png"}}
